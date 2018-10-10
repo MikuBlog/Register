@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "Description" content = "">
+        <meta name = "Keywords" content = "">
+        <title>表单</title>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+            body,html{
+                height:100%;
+                text-align: center;
+                overflow: hidden;
+                background:linear-gradient(to bottom,#d1fdff,#cafcff,#fddb92);
+            }
+            body::after{
+                content:'';
+                display: inline-block;
+                height:100%;
+                vertical-align: middle;
+            }
+            #register{
+                height:500px;
+                width:400px;
+                display: inline-block;
+                vertical-align: middle;
+                background:rgba(255,255,255,.5);
+            }
+            #register::after{
+                content:'';
+                display: inline-block;
+                height:100%;
+                vertical-align: middle;
+            }
+            form{
+                position: relative;
+                top:-3rem;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+            }
+            input{
+                text-indent: 8mm;
+                border:1px solid silver;
+                outline:none;
+                height:30px;
+                width:250px;
+                margin:5px;
+                border-radius:5px;
+            }
+            input:focus{
+                background: rgb(241, 237, 237);
+                border:1px solid rgb(0, 0, 0);
+            }
+            div{
+                position: relative;
+            }
+            img{
+                position:absolute;
+                top:8px;
+                left:8px;
+            }
+            button{
+                margin-top:5px;
+                outline: none;
+                border:1px solid silver;
+                height:30px;
+                width:253px;
+                background-color:black;
+                color:white;
+                border-radius:5px;
+                cursor: pointer;
+                transition: .5s;
+            }
+            button:hover{
+                background: red;
+            }
+
+            .register-head {
+                position: relative;
+                margin-top:3rem;
+                font-size: 2rem;
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id = "register">
+            <div class="register-head">Register</div>
+            <form >
+                <div><img src="./images/姓名.png" height = "25" width = "25"><input type="text" id = "name" placeholder="姓名"></div>
+                <div><img src="./images/邮箱.png" height = "25" width = "25"><input type="email" id = "email" placeholder="邮箱"></div>
+                <div><img src="./images/电话.png" height = "25" width = "25"><input type="text" id = "number"placeholder = "电话号码"></div>
+                <div><img src="./images/家庭.png" height = "25" width = "25"><input type="text" id = "adress"placeholder = "家庭住址"></div>
+                <div><img src="./images/学校.png" height = "25" width = "25"><input type="text" id = "school" placeholder="毕业学校"></div>
+                <button>submit</button>
+            </form>
+        </div>
+    </body>
+</html>
